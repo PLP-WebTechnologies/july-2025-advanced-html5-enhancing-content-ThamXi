@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Week 2 Assignment</title>
+</head>
+<body>
+
+  <header>
+    <h1>My Multi-Section HTML5 Demo Page</h1>
+    <p>This page demonstrates lists, tables, media embedding, and a fully-featured HTML5 form with native validation.</p>
+  </header>
+
+  <main>
+
+    <!-- Section 1: Lists -->
+    <section>
+      <h2>Popular Web Development Technologies</h2>
+      <h3>Front-End (Ordered List)</h3>
+      <ol>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+      </ol>
+
+      <h3>Back-End (Unordered List)</h3>
+      <ul>
+        <li>Node.js</li>
+        <li>Python (Django / Flask)</li>
+        <li>PHP (Laravel)</li>
+      </ul>
+    </section>
+
+    <!-- Section 2: Table -->
+    <section>
+      <h2>Sample Course Schedule</h2>
+      <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Course</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>HTML & CSS Basics</td>
+            <td>2 hours</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>JavaScript Essentials</td>
+            <td>3 hours</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Back-End Fundamentals</td>
+            <td>2.5 hours</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section 3: Media -->
+    <section>
+      <h2>Embedded Media Examples</h2>
+
+      <figure>
+        <img src="https://via.placeholder.com/400x200" alt="Placeholder Image of a Laptop on Desk">
+        <figcaption>Example image placeholder.</figcaption>
+      </figure>
+
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <br><br>
+
+      <video controls width="400">
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Section 4: Form -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="/submit" method="post" autocomplete="on">
+
+        <!-- Personal Info -->
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname" placeholder="John" required minlength="2" maxlength="30">
+          <br><br>
+
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" placeholder="Doe" required minlength="2" maxlength="30">
+          <br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+          <br><br>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="+27 123 456 7890" pattern="^\+?[0-9\s\-]{7,15}$" required>
+        </fieldset>
+
+        <br>
+
+        <!-- Account Info -->
+        <fieldset>
+          <legend>Account Details</legend>
+
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required minlength="4" maxlength="15">
+          <br><br>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="6">
+          <br><br>
+
+          <label for="confirm_password">Confirm Password:</label>
+          <input type="password" id="confirm_password" name="confirm_password" required minlength="6">
+        </fieldset>
+
+        <br>
+
+        <!-- Preferences -->
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="">--Select--</option>
+            <option value="za">South Africa</option>
+            <option value="ng">Nigeria</option>
+            <option value="ke">Kenya</option>
+          </select>
+          <br><br>
+
+          <span>Subscribe to newsletter?</span><br>
+          <input type="radio" id="yes" name="newsletter" value="yes" required>
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="newsletter" value="no">
+          <label for="no">No</label>
+          <br><br>
+
+          <label for="favcolor">Favorite Color:</label>
+          <input type="color" id="favcolor" name="favcolor">
+          <br><br>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+        </fieldset>
+
+        <br>
+
+        <!-- Terms -->
+        <fieldset>
+          <legend>Agreement</legend>
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">I agree to the terms and conditions</label>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear Form">
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HTML5 Week 2 Assignment.</p>
+  </footer>
+
+</body>
+</html>
